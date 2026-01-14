@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs4ekkndq5qhh"]
+
+[ext_resource type="MeshLibrary" uid="uid://bnbdkwsjbyeur" path="res://CLASE 9 TILES 2D Y 3D/meshes.tres" id="1_bmor6"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_bmor6")
+cell_size = Vector3(1, 1, 1)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(65535, 1, 131077, 5, 1, 131077, 65535, 7, 131077, 5, 7, 131077, 196604, 3, 1179659, 196604, 65535, 1441803)
+}
+metadata/_editor_floor_ = Vector3(0, 2, 0)
