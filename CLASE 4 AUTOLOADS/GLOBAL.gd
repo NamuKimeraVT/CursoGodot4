@@ -1,7 +1,6 @@
 extends Node
 
 var score : int
-
 var axis: Vector2
 
 func get_axis() -> Vector2:

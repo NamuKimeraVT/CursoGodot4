@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bjxctx477kcop"]
 
 [ext_resource type="Script" uid="uid://c4ebiyhmpe47b" path="res://CLASE 6 DEBUGGING/errores.gd" id="1_w63uo"]
-[ext_resource type="Script" uid="uid://dqd4t40cn2hmf" path="res://CLASE 6 DEBUGGING/player.gd" id="2_sijvv"]
+[ext_resource type="Script" uid="uid://le4ufv8vou6t" path="res://CLASE 7 MOVIMIENTO/scripts/movimiento_3d.gd" id="2_sijvv"]
 
 [node name="Errores" type="Node"]
 script = ExtResource("1_w63uo")

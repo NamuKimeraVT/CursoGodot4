@@ -4,7 +4,6 @@ extends Node
 var vidas : int
 var demoArray : Array = [1, 12, 20]
 
-
 func _ready() -> void:
 	if vidas > 5:
 		pass

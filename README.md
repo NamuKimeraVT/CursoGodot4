@@ -16,7 +16,8 @@ Bienvenidos a todos al curso de Introduccion a Godot Engine 4, en este archivo, 
 
 ## CLASE 1
 
-- Primeros Pasos
+- Descargar e Instalar Godot
+- Crear Proyecto
 
 ## CLASE 2
 
@@ -40,7 +41,8 @@ Bienvenidos a todos al curso de Introduccion a Godot Engine 4, en este archivo, 
 
 ## CLASE 7
 
-- Movimiento 2D/3D
+- Movimiento 2D
+- Movimiento 3D
 
 ## CLASE 8
 
@@ -50,7 +52,8 @@ Bienvenidos a todos al curso de Introduccion a Godot Engine 4, en este archivo, 
 
 ## CLASE 9
 
-- Tiles 2D y 3D
+- Tiles 2D 
+- Tiles 3D
 
 ## CLASE 10
 
@@ -58,7 +61,9 @@ Bienvenidos a todos al curso de Introduccion a Godot Engine 4, en este archivo, 
 
 ## CLASE 11
 
-- Exportar
+- Exportar Escritorio
+- Exportar Movil
 
 ## CLASE 12
+
 - Godot en Movil

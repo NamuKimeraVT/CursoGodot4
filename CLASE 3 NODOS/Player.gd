@@ -2,10 +2,7 @@ extends CharacterBody2D
 class_name Player
 
 # Variables
-var axis : Vector2 = Vector2.ZERO
 var death : bool = false
-
-var enemy = get_tree().get_nodes_in_group("Enemy")
 
 var can_attack = true
 
@@ -16,13 +13,12 @@ var can_attack = true
 @export_group("Motion")
 @export var speed = 100 # Velocidad de movimiento
 @export var health = 100 # Salud
-@export var jump = 168 # Salto
+@export var jump = 160 # Salto
 @export var gravity = 10 # Gravedad
 @export var attack_damage = 10
 @export var attack_range = 50
 
 func _process(_delta):
-	enemy.hit.conect(take_damage)
 	match death:
 		true:
 			death_ctrl()
@@ -33,18 +29,10 @@ func _input(event):
 	if not death and is_on_floor() and event.is_action_pressed("ui_accept"):
 		jump_ctrl(1)
 
-#Cambie de lugar  "ui_right" por "ui_left" para arreglar el movimiento
-func get_axis() -> Vector2:
-	axis.x = Input.get_axis("ui_left", "ui_right")
-	return axis.normalized()
+#Cambie de lugar "ui_right" por "ui_left" para arreglar el movimiento
 
 func motion_ctrl() -> void:
-	if not get_axis().x == 0:
-		$Sprite.scale.x = get_axis().x
-	
-	velocity.x = get_axis().x * speed
-	velocity.y += gravity
-	
+	velocity.x = GLOBAL.get_axis().x * speed
 	move_and_slide()
 	
 	# Ataque
@@ -53,7 +41,7 @@ func motion_ctrl() -> void:
 	
 	match is_on_floor():
 		true:
-			if not get_axis().x == 0:
+			if not GLOBAL.get_axis().x == 0:
 				$Sprite.play("run")
 			else:
 				$Sprite.play("Idle")
@@ -74,7 +62,7 @@ func take_damage(damage: int):
 	print("Salud restante Jugador: ", health)
 	if health <= 0 and not death:
 		death = true
-		$Sprite.play("Death")
+		death_ctrl()
 		$Collision.set_deferred("disabled", true)
 		gravity = 0
 		_on_sprite_animation_finished()  # Llama a un método para manejar la muerte
@@ -83,8 +71,9 @@ func die():
 	queue_free()  # Elimina el nodo del juego
 
 func jump_ctrl(power : float) -> void:
-	velocity.y = -jump * power
-	$Audio/Jump.play()
+	if Input.is_action_pressed("ui_jump"):
+		velocity.y = -jump * power
+		$Audio/Jump.play()
 
 func damage_ctrl() -> void:
 	death = true
