@@ -1,0 +1,36 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://boj1hvku5ighr"
+path="res://.godot/imported/Pokemon Hollow.ttf-84d5be4c05e85d8f6ce55df705751304.fontdata"
+
+[deps]
+
+source_file="res://CLASE 10 GAME USER INTERFACE/fonts/Pokemon Hollow.ttf"
+dest_files=["res://.godot/imported/Pokemon Hollow.ttf-84d5be4c05e85d8f6ce55df705751304.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

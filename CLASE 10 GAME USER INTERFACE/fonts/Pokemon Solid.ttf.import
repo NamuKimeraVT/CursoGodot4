@@ -1,0 +1,36 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://b5py5rxf51bee"
+path="res://.godot/imported/Pokemon Solid.ttf-acce57b9c0e198bcf4765c8bf35f62d1.fontdata"
+
+[deps]
+
+source_file="res://CLASE 10 GAME USER INTERFACE/fonts/Pokemon Solid.ttf"
+dest_files=["res://.godot/imported/Pokemon Solid.ttf-acce57b9c0e198bcf4765c8bf35f62d1.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

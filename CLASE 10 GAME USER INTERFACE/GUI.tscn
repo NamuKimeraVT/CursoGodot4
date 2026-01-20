@@ -1,0 +1,107 @@
+[gd_scene load_steps=8 format=3 uid="uid://dx0egtgg4ianf"]
+
+[ext_resource type="FontFile" uid="uid://b5py5rxf51bee" path="res://CLASE 10 GAME USER INTERFACE/fonts/Pokemon Solid.ttf" id="1_6e404"]
+[ext_resource type="Texture2D" uid="uid://cseqpg5a6mmw3" path="res://CLASE 10 GAME USER INTERFACE/sprites/ControlBtn.png" id="2_rve8r"]
+[ext_resource type="FontFile" uid="uid://boj1hvku5ighr" path="res://CLASE 10 GAME USER INTERFACE/fonts/Pokemon Hollow.ttf" id="3_fye0y"]
+[ext_resource type="Texture2D" uid="uid://0yif4peyrifc" path="res://CLASE 10 GAME USER INTERFACE/sprites/PlayBtn.png" id="4_dmfd0"]
+
+[sub_resource type="Theme" id="Theme_oygbr"]
+default_font = ExtResource("1_6e404")
+default_font_size = 24
+
+[sub_resource type="Theme" id="Theme_tjnmb"]
+default_font_size = 16
+
+[sub_resource type="Theme" id="Theme_pv210"]
+default_font_size = 16
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_oygbr")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1026.0
+offset_top = 16.0
+offset_right = 1137.0
+offset_bottom = 56.0
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme = SubResource("Theme_tjnmb")
+text = "Puntos:"
+
+[node name="Label2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_pv210")
+text = "00000"
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -75.0
+offset_right = 75.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 150.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_rve8r")
+expand_mode = 2
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_fye0y")
+theme_override_font_sizes/font_size = 16
+text = "Botón 1"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture = ExtResource("2_rve8r")
+expand_mode = 2
+
+[node name="LinkButton" type="LinkButton" parent="Panel/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_fye0y")
+theme_override_font_sizes/font_size = 24
+text = "Botón 2"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="Panel/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+texture_normal = ExtResource("4_dmfd0")
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 16.0
