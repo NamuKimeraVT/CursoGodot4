@@ -61,9 +61,7 @@ Bienvenidos a todos al curso de Introduccion a Godot Engine 4, en este archivo, 
 
 ## CLASE 11
 
-- Exportar Escritorio
-- Exportar Movil
-
-## CLASE 12
-
-- Godot en Movil
+- Exportar Windows
+- Exportar Linux
+- Exportar HTML 5
+- Exportar Android
